@@ -1,0 +1,749 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="开启了我的前端学习之旅我的第一个html文件
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+        &amp;lt;title&amp;gt;这是一个网页&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html+css">
+<meta property="og:url" content="http://yoursite.com/2016/03/29/html+css/index.html">
+<meta property="og:site_name" content="程泽峰的博客">
+<meta property="og:description" content="开启了我的前端学习之旅我的第一个html文件
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+        &amp;lt;title&amp;gt;这是一个网页&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;">
+<meta property="og:updated_time" content="2016-11-16T09:04:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html+css">
+<meta name="twitter:description" content="开启了我的前端学习之旅我的第一个html文件
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+        &amp;lt;title&amp;gt;这是一个网页&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/03/29/html+css/"/>
+
+
+
+
+
+  <title> html+css | 程泽峰的博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">程泽峰的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/03/29/html+css/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="程泽峰">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="程泽峰的博客">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="程泽峰的博客" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                html+css
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-03-29T00:00:00+08:00">
+                2016-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="开启了我的前端学习之旅"><a href="#开启了我的前端学习之旅" class="headerlink" title="开启了我的前端学习之旅"></a>开启了我的前端学习之旅</h1><p>我的第一个html文件</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;title&gt;这是一个网页&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        我的第一个网页
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>响应式布局的写法（css）</p>
+<pre><code>@media screen and (min-width: 600px) and (max-width: 800px){
+    div{
+        width: 33%;
+        height: 33vw;
+    }
+    html{
+        font-size: 14px;
+    }
+}
+</code></pre><p>渐变</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;渐变&lt;/title&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        div{
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            color: white;
+            line-height: 250px;
+            text-align: center;
+            font-size: 25px;
+            display: inline-block;
+        }
+        /*线性（梯度渐变）渐变*/
+        div:nth-child(1){background:
+            -webkit-linear-gradient(blue,red,black,purple);
+        }
+        div:nth-child(2){background:
+            -webkit-linear-gradient(left,blue,red,black,purple);
+        }
+        div:nth-child(3){background:
+            -webkit-linear-gradient(45deg,blue,red,black,purple);
+        }
+        div:nth-child(4){background:
+            -webkit-linear-gradient(top right,blue,red,black,purple);
+        }
+        div:nth-child(5){background:
+            -webkit-linear-gradient(top,red 30px,purple 150px);
+        }
+        div:nth-child(6){background:
+            -webkit-linear-gradient(top,red 30%,black 40%,purple 90%);
+        }
+        div:nth-child(7){background:
+            -webkit-repeating-linear-gradient(top,red 10%,purple 20%);
+        }
+        /*径向渐变*/
+        .div1{
+            background:-webkit-radial-gradient(blue 10%,green 40%,gold 70%);
+        }
+        .div2{
+            background:-webkit-repeating-radial-gradient(blue 10px,green 30px,gold 50px);
+        }
+        .div3{
+            display: block;
+            width: 800px;
+            background:-webkit-repeating-radial-gradient(blue 10px,green 30px,gold 50px);
+        }
+        .div4{
+            display: block;
+            width: 800px;
+            background:-webkit-repeating-radial-gradient( circle,blue 10px,green 30px,gold 50px);
+        }
+        .div5{
+            display: block;
+            background:-webkit-repeating-radial-gradient( circle,blue 10px,green 30px,gold 50px);
+            border-radius: 20%;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;grad1&lt;/div&gt;
+    &lt;div&gt;grad2&lt;/div&gt;
+    &lt;div&gt;grad3&lt;/div&gt;
+    &lt;div&gt;grad4&lt;/div&gt;
+    &lt;div&gt;grad5&lt;/div&gt;
+    &lt;div&gt;grad6&lt;/div&gt;
+    &lt;div&gt;grad7&lt;/div&gt;
+    &lt;h1&gt;上面的效果都是线性渐变&lt;/h1&gt;
+    &lt;div class=&quot;div1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;div2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;div3&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;div4&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;div5&quot;&gt;5&lt;/div&gt;
+    &lt;div class=&quot;div6&quot;&gt;6&lt;/div&gt;
+    &lt;div class=&quot;div7&quot;&gt;7&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>过渡</p>
+<pre><code>&lt;!-- 设置哪个属性有过渡效果 可以使width height 以及all（所有属性） --&gt;
+transition-property: width;
+&lt;!-- 动画总时长 --&gt;
+transition-duration: 5s;
+&lt;!-- 延迟几秒后执行动画 --&gt;
+transition-delay: 1s;
+&lt;!-- 贝塞尔曲线 --&gt;
+transition-timing-function: ease;
+各个浏览器前缀
+-webkit-transition:; &lt;!-- 谷歌 --&gt;
+-moz-transition:; &lt;!-- 火狐 --&gt;
+-ms-transition:; &lt;!-- IE --&gt;
+-o-transition:; &lt;!-- 欧朋 --&gt;
+</code></pre><p>2D动画</p>
+<pre><code>&lt;!-- 设置绕哪个点运动 --&gt;
+transform-origin: 300px 300px;
+transform:rotate(5000deg);&lt;!-- 旋转 --&gt;
+transform: translate(220px,80px);&lt;!-- 位移 --&gt;
+transform:scale(2,2);&lt;!-- 缩放 --&gt;
+transform: skewX(45deg); 沿X轴形变
+transition: all 1s ease-in 3s; &lt;!-- 所有的元素、形变时间、形变曲线、延迟时间 --&gt;
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/20/javascript/" rel="prev" title="javascript">
+                javascript <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="程泽峰" />
+          <p class="site-author-name" itemprop="name">程泽峰</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开启了我的前端学习之旅"><span class="nav-number">1.</span> <span class="nav-text">开启了我的前端学习之旅</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">程泽峰</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
