@@ -352,6 +352,136 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/09/mongodb/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="程泽峰">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="程泽峰的博客">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="程泽峰的博客" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/09/mongodb/" itemprop="url">
+                  mongodb
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-09T00:00:00+08:00">
+                2016-08-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Mac下mongodb的安装与使用"><a href="#Mac下mongodb的安装与使用" class="headerlink" title="Mac下mongodb的安装与使用"></a>Mac下mongodb的安装与使用</h1><h2 id="mongodb下载"><a href="#mongodb下载" class="headerlink" title="mongodb下载"></a>mongodb下载</h2><ol>
+<li>下载mongodb请点击<a href="https://www.mongodb.com/download-center#community" target="_blank" rel="external">这里</a>。</li>
+<li>将下载的文件名字更改为mongodb，建议将文件移动至Applications文件夹下。</li>
+<li>打开终端在根目录中输入<code>sudo mkdir -p /data/db</code>。（输入这个命令后会让你输入计算机的开机密码）。</li>
+<li>再在终端中输入<code>sudo chown -R  用户名 /data</code>，将用户名改成自己电脑的用户名。</li>
+<li>进入<code>mongodb/bin</code>文件，执行 <code>./mongod</code>。</li>
+</ol>
+<p>完成上述操作后服务器就启动了，想在终端操作服务器的话，可以再重新打开一个终端，进入<code>mongodb/bin</code>文件，执行 <code>./mongo</code>。</p>
+<h2 id="mongodb常用的命令"><a href="#mongodb常用的命令" class="headerlink" title="mongodb常用的命令"></a>mongodb常用的命令</h2><p>查看已有的数据库<br><code>show dbs</code>可以查看所有数据库（如果你创建的数据库没有存数据的话，通过show dbs是查询不到的，要显示的话可以插入一些数据）。</p>
+<p>创建数据库<br><code>use cheng</code>是创建了cheng数据库。</p>
+<p>插入数据可以使用<code>insert</code><br>例：<code>db.cheng.insert({&quot;name&quot;:&quot;程&quot;})</code>向cheng的数据库插入了一些数据。</p>
+<p>mongodb中有个默认的数据库test，如果你没有创建新的数据库，集合将放在test中</p>
+<p>删除数据库<br>假如要删除已有的数据库<br>首先要使用<code>show dbs</code>查看有哪些数据库，使用<code>use 要删除的数据库</code>来切换值要删除的数据库，再使用<code>db.dropDatabase()</code>命令删除数据库。（可以使用<code>show dbs</code>查看数据库是否已经删除）</p>
+<p>删除集合<br><code>db.collection.drop()</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/06/first/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1076,7 +1206,7 @@ transition: all 1s ease-in 3s; &lt;!-- 所有的元素、形变时间、形变�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
